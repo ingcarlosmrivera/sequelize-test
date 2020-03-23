@@ -22,6 +22,9 @@ app.get('/', async(req, res)=> {
     } catch (error) {
         res.json({
             error: true,
+            debug: {
+                env: process.env
+            },
             message: error
         })
     }
