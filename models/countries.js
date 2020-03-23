@@ -57,4 +57,4 @@ const Countries = sequelize.define('countries', {
 }
 )
 
-module.exports = Countries
+module.exports = {sequelize, Countries}
